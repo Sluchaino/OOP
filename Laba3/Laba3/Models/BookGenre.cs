@@ -5,7 +5,6 @@ namespace Laba3.Models
 {
     public class BookGenre
     {
-        [Key]
         public int BookGenreId { get; set; }
         public int BookId { get; set; }
         [ForeignKey("BookId")]

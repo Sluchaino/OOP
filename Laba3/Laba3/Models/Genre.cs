@@ -5,14 +5,10 @@ namespace Laba3.Models
 {
     public class Genre
     {
-        public Genre()
-        {
-            BookGenres = new List<BookGenre>();
-        }
         public int GenreId { get; set; }
         [ForeignKey("GenreId")]
         public string? Name { get; set; }
-        public ICollection<BookGenre> BookGenres { get; set; }
+        public ICollection<BookGenre>? BookGenres { get; set; }
     }
     
 }
