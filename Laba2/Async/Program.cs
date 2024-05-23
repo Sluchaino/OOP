@@ -8,7 +8,7 @@ class Program
         var client = new HttpClient();
         client.DefaultRequestHeaders.Add("User-Agent", "MyApp");
 
-        // Запрос вакансий по ключевому слову "developer"
+        // Запрос вакансий по ключевому слову "developer"0
         HttpResponseMessage response = await client.GetAsync("https://api.hh.ru/vacancies?text=developer");
         string json = await response.Content.ReadAsStringAsync();
         File.WriteAllText("C://Users//Maks//Desktop//OOP//Laba2//Async//json//vacancies_developer.json", json);
